@@ -67,7 +67,7 @@ class APIError(Exception):
 class TextCortex:
 
     def __init__(self, api_key: str):
-        self.url = 'https://api.textcortex.com/hemingwai/generate_text_v2'
+        self.url = 'https://api.textcortex.com/hemingwai/generate_text_v3'
         self.api_key = api_key
 
     @retry(Exception, tries=2, logger=logging, default_value=None)
@@ -80,7 +80,7 @@ class TextCortex:
             "template_name": template_name,
             "prompt": prompt,
             "temperature": temperature,
-            "word_count": word_count,
+            "token_count": word_count,
             "n_gen": n_gen,
             "source_language": source_language,
             "api_key": self.api_key,
