@@ -1,6 +1,9 @@
 # TextCortex - HemingwAI
 ![alt text](https://github.com/textcortex/hemingwai/raw/main/textcortex_logo.png?raw=true "TextCortex AI API Hemingway Logo")
 
+A modified version of the original TextCortex API python lib, that works with the Version 3 of the API
+
+
 Generate product descriptions, blogs, ads and more using GPT architecture with a single request to TextCortex API a.k.a 
 HemingwAI
 
